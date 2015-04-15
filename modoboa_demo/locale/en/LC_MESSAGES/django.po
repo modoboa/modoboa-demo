@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-15 11:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: __init__.py:21
+msgid "Test messages"
+msgstr ""
+
+#: __init__.py:26
+msgid "Send virus"
+msgstr ""
+
+#: __init__.py:29
+msgid "Send spam"
+msgstr ""
+
+#: templates/modoboa_demo/login_announcement.html:2
+msgid ""
+"\n"
+"<h3>Welcome to the online demo!</h3>\n"
+"<p><b>Warning:</b> the demo's concent is resetted every two hours.</p>\n"
+"<p>To try the demo, the following users are available (<i>username/password</"
+"i>): </p>\n"
+"<ul>\n"
+"  <li>A super administrator : <b>admin/password</b></li>\n"
+"  <li>A domain administrator : <b>admin@demo.local/admin</b></li>\n"
+"  <li>A simple user : <b>user@demo.local/user</b></li>\n"
+"</ul>\n"
+"<p>Please report any issue or give any suggestion to \n"
+"  <a href=\"https://groups.google.com/forum/#!forum/modoboa-users\">the "
+"mailing list</a>.</p>\n"
+msgstr ""
+
+#: views.py:25 views.py:51
+msgid "Message sent"
+msgstr ""

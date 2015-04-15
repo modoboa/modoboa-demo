@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Giancarlo Gaifas <lallo@artiemestieri.tn.it>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-15 11:14+0200\n"
+"PO-Revision-Date: 2013-12-23 00:56+0100\n"
+"Last-Translator: Alberto Berti <alberto@metapensiero.it>\n"
+"Language-Team: ITALIANO <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: __init__.py:21
+msgid "Test messages"
+msgstr "Messaggi di test"
+
+#: __init__.py:26
+msgid "Send virus"
+msgstr "Invia virus"
+
+#: __init__.py:29
+msgid "Send spam"
+msgstr "Invia spam"
+
+#: templates/modoboa_demo/login_announcement.html:2
+msgid ""
+"\n"
+"<h3>Welcome to the online demo!</h3>\n"
+"<p><b>Warning:</b> the demo's concent is resetted every two hours.</p>\n"
+"<p>To try the demo, the following users are available (<i>username/password</"
+"i>): </p>\n"
+"<ul>\n"
+"  <li>A super administrator : <b>admin/password</b></li>\n"
+"  <li>A domain administrator : <b>admin@demo.local/admin</b></li>\n"
+"  <li>A simple user : <b>user@demo.local/user</b></li>\n"
+"</ul>\n"
+"<p>Please report any issue or give any suggestion to \n"
+"  <a href=\"https://groups.google.com/forum/#!forum/modoboa-users\">the "
+"mailing list</a>.</p>\n"
+msgstr ""
+"\n"
+"<h3>Benvenuti alla demo online!</h3>\n"
+"<p><b>Attenzione:</b> il contenuto della demo viene rinnovato ogni due ore.</"
+"p>\n"
+"<p>Per provare la demo sono disponibili i seguenti utenti (<i>username/"
+"password</\n"
+"i>): </p>\n"
+"<ul>\n"
+"  <li>Un super amministratore : <b>admin/password</b></li>\n"
+"  <li>Un amministratore di domini : <b>admin@demo.local/admin</b></li>\n"
+"  <li>Un semplice utente : <b>user@demo.local/user</b></li>\n"
+"</ul>\n"
+"<p>Prego segnalare qualsiasi errore o inviare suggerimenti  \n"
+"  <a href=\"https://groups.google.com/forum/#!forum/modoboa-users\">alla \n"
+"mailing list</a>.</p>\n"
+
+#: views.py:25 views.py:51
+msgid "Message sent"
+msgstr "Messaggio inviato"
