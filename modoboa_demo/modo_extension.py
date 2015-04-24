@@ -25,7 +25,7 @@ class Demo(ModoExtension):
         )
         dadmin.set_password("admin")
         dadmin.save()
-        domain.add_admin(dadmin)
+        domain.add_admin(dadmin.user)
         user = MailboxFactory.create(
             address="user", domain=domain, user__username="user@demo.local",
             user__groups=["SimpleUsers"]
