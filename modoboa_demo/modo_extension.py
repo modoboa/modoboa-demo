@@ -20,10 +20,14 @@ class Demo(ModoExtension):
         """Load demo data."""
         domain = DomainFactory.create(name="demo.local")
         dadmin = MailboxFactory.create(
-            address="admin", domain=domain, user__username="admin@demo.local")
+            address="admin", domain=domain, user__username="admin@demo.local",
+            user__groups=["DomainAdmins"]
+        )
         domain.add_admin(dadmin)
         MailboxFactory.create(
-            address="user", domain=domain, user__username="user@demo.local")
+            address="user", domain=domain, user__username="user@demo.local",
+            user__groups=["SimpleUsers"]
+        )
 
 exts_pool.register_extension(Demo)
 
