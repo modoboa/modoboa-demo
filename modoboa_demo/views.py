@@ -19,11 +19,11 @@ from modoboa_admin.lib import needs_mailbox
 def send_virus(request):
     status, error = sendmail_fromfile(
         "virus@example.net", request.user.username,
-        os.path.join(settings.MODOBOA_DIR, "tmp/virus.msg")
+        os.path.join(settings.BASE_DIR, "tmp/virus.msg")
     )
     if status:
         return render_to_json_response(_("Message sent"))
-    return render_to_json_response({"respmsg": error}, status=500)
+    return render_to_json_response(error, status=500)
 
 
 @login_required
