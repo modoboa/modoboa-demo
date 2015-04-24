@@ -23,11 +23,15 @@ class Demo(ModoExtension):
             address="admin", domain=domain, user__username="admin@demo.local",
             user__groups=["DomainAdmins"]
         )
+        dadmin.set_password("admin")
+        dadmin.save()
         domain.add_admin(dadmin)
-        MailboxFactory.create(
+        user = MailboxFactory.create(
             address="user", domain=domain, user__username="user@demo.local",
             user__groups=["SimpleUsers"]
         )
+        user.set_password("user")
+        user.save()
 
 exts_pool.register_extension(Demo)
 
