@@ -14,7 +14,7 @@ from modoboa.lib.web_utils import static_url
 def menu(target, user):
     if target != "top_menu_middle":
         return []
-    if not user.mailbox_set.count():
+    if not hasattr(user, "mailbox"):
         return []
     return [
         {"name": "demo",
@@ -48,7 +48,7 @@ def password_change(user):
 
 @events.observe("GetStaticContent")
 def get_static_content(caller, st_type, user):
-    if caller != 'top' or st_type != 'js' or not user.mailbox_set.count():
+    if caller != 'top' or st_type != 'js' or not hasattr(user, "mailbox"):
         return []
 
     return ["""<script type="text/javascript">
