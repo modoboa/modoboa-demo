@@ -38,6 +38,8 @@ class Demo(ModoExtension):
         save_admin("HANDLE_MAILBOXES", "yes", app="modoboa_admin")
         save_admin("AM_PDP_MODE", "inet", app="modoboa_amavis")
         save_admin("RRD_ROOTDIR", "/srv/modoboa/rrdfiles", app="modoboa_stats")
+        save_admin(
+            "STORAGE_DIR", "/srv/modoboa/pdfcredentials",
+            app="modoboa_pdfcredentials")
 
 exts_pool.register_extension(Demo)
-
