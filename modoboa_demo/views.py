@@ -8,10 +8,9 @@ from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.utils.translation import ugettext as _
 
+from modoboa.admin.lib import needs_mailbox
 from modoboa.lib.web_utils import render_to_json_response
 from modoboa.lib.email_utils import sendmail_simple, sendmail_fromfile
-
-from modoboa_admin.lib import needs_mailbox
 
 
 @login_required
