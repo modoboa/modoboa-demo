@@ -37,7 +37,7 @@ def menu(sender, location, user, **kwargs):
 def announcement(sender, location, **kwargs):
     if location == "loginpage":
         txt = render_to_string("modoboa_demo/login_announcement.html")
-        return [txt]
+        return txt
     return ""
 
 
