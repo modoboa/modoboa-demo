@@ -1,9 +1,9 @@
 # coding: utf-8
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
-urlpatterns = patterns(
-    'modoboa_demo.views',
+from . import views
 
-    url(r'^sendvirus/$', 'send_virus', name="virus_send"),
-    url(r'^sendspam/$', 'send_spam', name="spam_send"),
-)
+urlpatterns = [
+    url(r'^sendvirus/$', views.send_virus, name="virus_send"),
+    url(r'^sendspam/$', views.send_spam, name="spam_send"),
+]

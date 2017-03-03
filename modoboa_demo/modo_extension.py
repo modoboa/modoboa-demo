@@ -3,8 +3,8 @@
 from django.utils.translation import ugettext_lazy
 
 from modoboa.admin.factories import DomainFactory, MailboxFactory
+from modoboa.core import models as core_models
 from modoboa.core.extensions import ModoExtension, exts_pool
-from modoboa.lib.parameters import save_admin
 
 
 class Demo(ModoExtension):
@@ -34,11 +34,14 @@ class Demo(ModoExtension):
         user.user.save()
 
         # Configure parameters
-        save_admin("HANDLE_MAILBOXES", "yes", app="admin")
-        save_admin("AM_PDP_MODE", "inet", app="modoboa_amavis")
-        save_admin("RRD_ROOTDIR", "/srv/modoboa/rrdfiles", app="modoboa_stats")
-        save_admin(
-            "STORAGE_DIR", "/srv/modoboa/pdfcredentials",
+        lc = core_models.LocalConfig.objects.first()
+        lc.parameters.set_value("handle_mailboxes", True, app="admin")
+        lc.parameters.set_value("am_pdp_mode", "inet", app="modoboa_amavis")
+        lc.parameters.set_value(
+            "rrd_rootdir", "/srv/modoboa/rrdfiles", app="modoboa_stats")
+        lc.parameters.set_value(
+            "storage_dir", "/srv/modoboa/pdfcredentials",
             app="modoboa_pdfcredentials")
+        lc.save()
 
 exts_pool.register_extension(Demo)

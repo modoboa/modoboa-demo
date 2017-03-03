@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Modoboa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-15 11:14+0200\n"
+"POT-Creation-Date: 2017-03-03 14:22+0100\n"
 "PO-Revision-Date: 2013-10-01 09:56+0000\n"
 "Last-Translator: Pedro Gracia <lasarux@neuroomante.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/modoboa/language/"
@@ -20,33 +20,50 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: __init__.py:21
+#: handlers.py:21
 msgid "Test messages"
 msgstr "Mensajes de test"
 
-#: __init__.py:26
+#: handlers.py:26
 msgid "Send virus"
 msgstr "Enviar virus"
 
-#: __init__.py:29
+#: handlers.py:29
 msgid "Send spam"
 msgstr "Enviar correo basura"
 
-#: templates/modoboa_demo/login_announcement.html:2
+#: modo_extension.py:15
+msgid "Demo"
+msgstr ""
+
+#: modo_extension.py:17
+msgid "Demonstration features for Modoboa"
+msgstr ""
+
+#: templates/modoboa_demo/login_announcement.html:3
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "<h3>Welcome to the online demo!</h3>\n"
+#| "<p><b>Warning:</b> the demo's concent is resetted every two hours.</p>\n"
+#| "<p>To try the demo, the following users are available (<i>username/"
+#| "password</i>): </p>\n"
+#| "<ul>\n"
+#| "  <li>A super administrator : <b>admin/password</b></li>\n"
+#| "  <li>A domain administrator : <b>admin@demo.local/admin</b></li>\n"
+#| "  <li>A simple user : <b>user@demo.local/user</b></li>\n"
+#| "</ul>\n"
+#| "<p>Please report any issue or give any suggestion to \n"
+#| "  <a href=\"https://groups.google.com/forum/#!forum/modoboa-users\">the "
+#| "mailing list</a>.</p>\n"
 msgid ""
-"\n"
-"<h3>Welcome to the online demo!</h3>\n"
-"<p><b>Warning:</b> the demo's concent is resetted every two hours.</p>\n"
-"<p>To try the demo, the following users are available (<i>username/password</"
-"i>): </p>\n"
-"<ul>\n"
-"  <li>A super administrator : <b>admin/password</b></li>\n"
-"  <li>A domain administrator : <b>admin@demo.local/admin</b></li>\n"
-"  <li>A simple user : <b>user@demo.local/user</b></li>\n"
-"</ul>\n"
-"<p>Please report any issue or give any suggestion to \n"
-"  <a href=\"https://groups.google.com/forum/#!forum/modoboa-users\">the "
-"mailing list</a>.</p>\n"
+"<h3>Welcome to the online demo!</h3> <p><b>Warning:</b> the demo's concent "
+"is resetted every two hours.</p> <p>To try the demo, the following users are "
+"available (<i>username/password</i>): </p> <ul> <li>A super administrator : "
+"<b>admin/password</b></li> <li>A domain administrator : <b>admin@demo.local/"
+"admin</b></li> <li>A simple user : <b>user@demo.local/user</b></li> </ul> "
+"<p>Please report any issue or give any suggestion to <a href=\"https://"
+"groups.google.com/forum/#!forum/modoboa-users\">the mailing list</a>.</p>"
 msgstr ""
 "\n"
 "<h3>¡Bienvendio a la demo!</h3>\n"
@@ -64,6 +81,6 @@ msgstr ""
 "  <a href=\"https://groups.google.com/forum/#!forum/modoboa-users\">la lista "
 "de correo</a>.</p>\n"
 
-#: views.py:25 views.py:51
+#: views.py:24 views.py:50
 msgid "Message sent"
 msgstr "Mensaje enviado"
