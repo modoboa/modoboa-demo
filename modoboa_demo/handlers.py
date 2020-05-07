@@ -1,6 +1,6 @@
 """Demo handlers."""
 
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.dispatch import receiver
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext as _
