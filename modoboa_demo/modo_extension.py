@@ -36,12 +36,23 @@ class Demo(ModoExtension):
         # Configure parameters
         lc = core_models.LocalConfig.objects.first()
         lc.parameters.set_value("handle_mailboxes", True, app="admin")
+        lc.parameters.set_value(
+            "dkim_keys_storage_dir", "/var/lib/dkim", app="admin")
         lc.parameters.set_value("am_pdp_mode", "inet", app="modoboa_amavis")
         lc.parameters.set_value(
             "rrd_rootdir", "/srv/modoboa/rrdfiles", app="maillog")
         lc.parameters.set_value(
             "storage_dir", "/srv/modoboa/pdfcredentials",
             app="modoboa_pdfcredentials")
+        lc.parameters.set_value(
+            "server_location", "https://demo.modoboa.org/radicale/",
+            app="modoboa_radicale"
+        )
+        lc.parameters.set_value(
+            "rights_file_path", "/etc/radicale/rights",
+            app="modoboa_radicale"
+        )
         lc.save()
+
 
 exts_pool.register_extension(Demo)
