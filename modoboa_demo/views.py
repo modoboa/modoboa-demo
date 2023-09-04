@@ -6,7 +6,7 @@ import os
 
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 from modoboa.admin.lib import needs_mailbox
 from modoboa.lib.web_utils import render_to_json_response

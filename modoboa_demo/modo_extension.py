@@ -1,6 +1,6 @@
 """Demo extension."""
 
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 
 from modoboa.admin.factories import DomainFactory, MailboxFactory
 from modoboa.core import models as core_models
@@ -12,9 +12,9 @@ class Demo(ModoExtension):
     """The demo extension."""
 
     name = "modoboa_demo"
-    label = ugettext_lazy("Demo")
+    label = gettext_lazy("Demo")
     version = "1.0.0"
-    description = ugettext_lazy("Demonstration features for Modoboa")
+    description = gettext_lazy("Demonstration features for Modoboa")
 
     def load_initial_data(self):
         """Load demo data."""
