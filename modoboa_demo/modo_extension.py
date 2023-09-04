@@ -43,7 +43,7 @@ class Demo(ModoExtension):
             "rrd_rootdir", "/srv/modoboa/rrdfiles", app="maillog")
         lc.parameters.set_value(
             "storage_dir", "/srv/modoboa/pdfcredentials",
-            app="modoboa_pdfcredentials")
+            app="pdfcredentials")
         lc.parameters.set_value(
             "server_location", "https://demo.modoboa.org/radicale/",
             app="modoboa_radicale"
