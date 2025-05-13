@@ -38,7 +38,6 @@ class Demo(ModoExtension):
         lc.parameters.set_value("handle_mailboxes", True, app="admin")
         lc.parameters.set_value(
             "dkim_keys_storage_dir", "/var/lib/dkim", app="admin")
-        lc.parameters.set_value("am_pdp_mode", "inet", app="modoboa_amavis")
         lc.parameters.set_value(
             "rrd_rootdir", "/srv/modoboa/rrdfiles", app="maillog")
         lc.parameters.set_value(
