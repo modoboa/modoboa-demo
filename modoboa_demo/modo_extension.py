@@ -45,11 +45,11 @@ class Demo(ModoExtension):
             app="pdfcredentials")
         lc.parameters.set_value(
             "server_location", "https://demo.modoboa.org/radicale/",
-            app="modoboa_radicale"
+            app="calendars"
         )
         lc.parameters.set_value(
             "rights_file_path", "/etc/radicale/rights",
-            app="modoboa_radicale"
+            app="calendars"
         )
         lc.save()
 
